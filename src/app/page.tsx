@@ -1,3 +1,5 @@
+'use client';
+
 import Link from "next/link";
 import CTASection from "../components/CTASection";
 import ContactForm from "../components/ContactForm";
