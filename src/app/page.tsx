@@ -1,5 +1,6 @@
 import Link from "next/link";
 import CTASection from "../components/CTASection";
+import ContactForm from "../components/ContactForm";
 
 export default function Home() {
   return (
@@ -124,17 +125,19 @@ ITのプロによるLINE公式アカウント構築サービス"        link="#c
       </section>
 
       {/* Contact Section (お問い合わせ) */}
-      <CTASection
-        buttonText="初回IT戦略コンサルティングに申し込む（無料）"
-        description="まずはITのプロにお気軽にご相談ください
-あなたの教室の課題をヒアリングし、売上アップに繋がる具体的なLINE活用戦略をご提案します。"
-        link="#contact"
-        note="90分 20,000円（税込み）。ご満足いただけなければ全額返金。"
-      />
-
-      <p className="mt-8 text-lg">
-        <a href="#" className="underline hover:no-underline">サービス資料をダウンロードする（無料）</a>
-      </p>
+      <section id="contact" className="py-16 bg-green-700 text-white text-center">
+        <div className="container mx-auto px-4">
+          <h3 className="text-3xl font-bold mb-8">まずはITのプロにお気軽にご相談ください</h3>
+          <p className="text-xl mb-8">
+            あなたの教室の課題をヒアリングし、売上アップに繋がる具体的なLINE活用戦略をご提案します。
+          </p>
+          <ContactForm />
+          <p className="mt-4 text-sm">90分 20,000円（税込み）。ご満足いただけなければ全額返金。</p>
+          <p className="mt-8 text-lg">
+            <a href="#" className="underline hover:no-underline">サービス資料をダウンロードする（無料）</a>
+          </p>
+        </div>
+      </section>
 
       {/* Footer Section */}
       <footer className="bg-gray-800 text-white py-8 text-center">
