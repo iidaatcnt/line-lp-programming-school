@@ -1,4 +1,5 @@
 import Link from "next/link";
+import CTASection from "../components/CTASection";
 
 export default function Home() {
   return (
@@ -22,22 +23,10 @@ export default function Home() {
       </header>
 
       {/* Hero Section (ファーストビュー) */}
-      <section className="bg-green-600 text-white py-20 text-center">
-        <div className="container mx-auto px-4">
-          <h2 className="text-4xl md:text-5xl font-extrabold leading-tight mb-4">
-            体験学習で終わらせない！<br />
-            既習者も初心者も満足させる最新LINE活用型教えます
-          </h2>
-          <p className="text-xl mb-8">
-            プログラミング教室の入会率・継続率を劇的にアップさせる<br />
-            ITのプロによるLINE公式アカウント構築サービス
-          </p>
-          <button className="bg-white text-green-600 font-bold py-3 px-8 rounded-full text-lg hover:bg-gray-100 transition duration-300">
-            まずは初回IT戦略コンサルティングに申し込む（無料）
-          </button>
-          <p className="mt-4 text-sm">90分 20,000円（税込み）。ご満足いただけなければ全額返金。</p>
-        </div>
-      </section>
+      <CTASection        buttonText="まずは初回IT戦略コンサルティングに申し込む（無料）"        description="体験学習で終わらせない！
+既習者も初心者も満足させる最新LINE活用型教えます
+プログラミング教室の入会率・継続率を劇的にアップさせる
+ITのプロによるLINE公式アカウント構築サービス"        link="#contact"        note="90分 20,000円（税込み）。ご満足いただけなければ全額返金。"      />
 
       {/* Problems Section (お悩み) */}
       <section id="problems" className="py-16 bg-white">
@@ -135,21 +124,17 @@ export default function Home() {
       </section>
 
       {/* Contact Section (お問い合わせ) */}
-      <section id="contact" className="py-16 bg-green-700 text-white text-center">
-        <div className="container mx-auto px-4">
-          <h3 className="text-3xl font-bold mb-8">まずはITのプロにお気軽にご相談ください</h3>
-          <p className="text-xl mb-8">
-            あなたの教室の課題をヒアリングし、売上アップに繋がる具体的なLINE活用戦略をご提案します。
-          </p>
-          <button className="bg-white text-green-700 font-bold py-3 px-8 rounded-full text-lg hover:bg-gray-100 transition duration-300">
-            初回IT戦略コンサルティングに申し込む（無料）
-          </button>
-          <p className="mt-4 text-sm">90分 20,000円（税込み）。ご満足いただけなければ全額返金。</p>
-          <p className="mt-8 text-lg">
-            <a href="#" className="underline hover:no-underline">サービス資料をダウンロードする（無料）</a>
-          </p>
-        </div>
-      </section>
+      <CTASection
+        buttonText="初回IT戦略コンサルティングに申し込む（無料）"
+        description="まずはITのプロにお気軽にご相談ください
+あなたの教室の課題をヒアリングし、売上アップに繋がる具体的なLINE活用戦略をご提案します。"
+        link="#contact"
+        note="90分 20,000円（税込み）。ご満足いただけなければ全額返金。"
+      />
+
+      <p className="mt-8 text-lg">
+        <a href="#" className="underline hover:no-underline">サービス資料をダウンロードする（無料）</a>
+      </p>
 
       {/* Footer Section */}
       <footer className="bg-gray-800 text-white py-8 text-center">
